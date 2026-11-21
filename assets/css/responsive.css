@@ -1,0 +1,163 @@
+/* ==========================================================================
+   RESPONSIVE — tuned for every screen:
+   ≥1920 large desktop · 1025–1440 laptop · short laptops · ≤1100 small laptop
+   ≤1024 tablet · ≤900 tablet portrait · ≤640 phone · ≤380 small phone
+   (font size also scales up automatically on 2K / 4K — see base.css)
+   ========================================================================== */
+
+/* ---------- Short laptop screens: keep sticky panels inside the viewport ---------- */
+@media (min-width: 1025px) and (max-height: 960px) {
+  .panel-sticky { top: 9vh; gap: 1.4rem; }
+  .design-show__title,
+  .dev-show__title { font-size: min(7.5rem, 10.5vh); }
+  .dev-show .panel__text { display: none; }
+  .code-window__body { min-height: 11.5em; }
+}
+@media (min-width: 1025px) and (max-height: 760px) {
+  .panel__text { display: none; }
+  .code-window { display: none; }
+}
+
+/* ---------- Small laptop (≤ 1100px) ---------- */
+@media (max-width: 1100px) {
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .nav { gap: 1.5rem; }
+}
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .nav { display: none; }
+  .header__right { margin-right: calc(3.6rem + 0.9rem); } /* clear the floating menu button */
+  .menu-btn { top: 1.2rem; width: 3.6rem; height: 3.6rem; transform: scale(1); }
+  .header__inner { padding-block: 1.4rem; }
+
+  .intro__grid { grid-template-columns: 1fr; }
+
+  /* Work: stack the sticky panels above their projects */
+  .design-show__grid,
+  .dev-show__grid { grid-template-columns: 1fr; gap: 3.5rem; }
+  .design-show__panel { order: -1; }
+  .panel-sticky { position: relative; top: auto; }
+  .panel__now { display: none; }
+  .design-show__title,
+  .dev-show__title { font-size: clamp(3rem, 1rem + 9vw, 6.5rem); }
+
+  /* side slide-ins become vertical rises on smaller screens */
+  .js [data-reveal="left"],
+  .js [data-reveal="right"] { transform: translate3d(0, 50px, 0); }
+
+  .dintro { height: 280vh; }
+}
+
+/* ---------- Tablet portrait (≤ 900px) ---------- */
+@media (max-width: 900px) {
+  .cv__grid { grid-template-columns: 1fr; }
+  .contact__grid { grid-template-columns: 1fr; }
+  .contact__side { grid-template-columns: auto 1fr; align-items: center; }
+  .contact__side .socials { grid-column: 1 / -1; }
+  .process { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2rem; }
+}
+
+/* ---------- Phone hero (≤ 767px): show the portrait poster whole, name below it ---------- */
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero::before { height: 6rem; }
+  .hero__media {
+    position: relative;
+    inset: auto;
+    width: 90%;
+    margin-inline: auto;
+    aspect-ratio: 941 / 1672; /* same shape as the poster, so nothing is cropped */
+  }
+  .hero__img { object-position: 50% 0; }
+  .hero__bottom {
+    position: relative;
+    margin-top: -1.25rem; /* tucks into the white bottom edge of the poster */
+    padding-bottom: 2.25rem;
+  }
+  .hero__name-item { font-size: 21vw; }
+}
+
+/* ---------- Phone (≤ 640px) ---------- */
+@media (max-width: 640px) {
+  :root { --radius: 16px; }
+
+  .logo__text small { display: none; }
+
+  .hero { min-height: 32rem; }
+  .hero__img { object-position: 50% 30%; }
+  .hero__meta { flex-direction: column; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.25rem; }
+  .hero__chip { font-size: var(--fs-xs); padding: 0.5rem 0.95rem; }
+  .hero__name-item { font-size: 22vw; }
+  .js .hero__media { clip-path: inset(5% 4% 10% 4% round 20px); }
+
+  .intro,
+  .cv,
+  .contact,
+  .works-cta { margin-top: -1.5rem; border-radius: 1.5rem 1.5rem 0 0; }
+
+  .intro__facts { grid-template-columns: 1fr; gap: 0; }
+  .intro__facts li { padding-block: 1.2rem; }
+  .intro__actions .btn-round { --size: 8.5rem; }
+
+  .dintro { height: 240vh; }
+  .dintro__title { font-size: 15vw; }
+  .dintro__stroke { height: 1.1rem; }
+
+  .design-show__gallery { grid-template-columns: 1fr; }
+  .dproj--offset { margin-top: 0; }
+  .dproj__cap { grid-template-columns: auto 1fr auto; }
+  .dproj__cap time { display: none; }
+  .gallery-label { padding: 1.1rem 0; font-size: var(--fs-sm); }
+  .more-card__arrow { width: 2.75rem; height: 2.75rem; }
+
+  .switch { height: 200vh; }
+  .switch__word { font-size: 21vw; }
+  .switch__word--code { font-size: 12.5vw; }
+
+  .dev-card__type { margin-left: 0; width: 100%; }
+  .code-window__body { font-size: 0.74rem; }
+
+  .cv__actions { width: 100%; }
+  .cv__actions .btn-pill { flex: 1 1 10rem; }
+  .skills > div { grid-template-columns: 1fr; gap: 0.25rem; }
+
+  .services-grid { grid-template-columns: 1fr; }
+  .svc__actions .btn-pill { flex: 1 1 100%; }
+  .svc--wide { flex-direction: column; align-items: flex-start; }
+  .svc--wide .svc__actions { width: 100%; }
+  .svc--wide .btn-pill { flex: 1 1 100%; }
+
+  .form__row { grid-template-columns: 1fr; }
+  .form__actions .btn-pill { flex: 1 1 100%; }
+  .contact__side { grid-template-columns: 1fr; }
+  .contact__round { justify-self: center; --size: 9rem; }
+
+  .footer { flex-direction: column; align-items: flex-start; }
+
+  .wa-float { right: 1rem; bottom: 1rem; width: 3.25rem; height: 3.25rem; }
+
+  .lightbox__prev,
+  .lightbox__next { top: auto; bottom: 1.5rem; translate: none; }
+}
+
+/* ---------- Small phone (≤ 380px) ---------- */
+@media (max-width: 380px) {
+  .process { grid-template-columns: 1fr; }
+  .socials--grid { grid-template-columns: 1fr; }
+  .channel strong { font-size: var(--fs-base); }
+  .filters__btn { padding: 0.55rem 0.75rem; }
+}
+
+/* ---------- Landscape phones (short + wide) ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: 100vh; }
+  .hero__meta { display: none; }
+  .hero__name-item { font-size: 18vh; }
+  .dintro__title { font-size: 16vh; }
+}

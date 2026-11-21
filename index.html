@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rupam Debnath — Graphic Designer &amp; Web Developer</title>
+  <meta name="description" content="Rupam Debnath is a graphic designer and web developer. Posters, branding and UI design — plus fast, accessible websites and mobile apps. Hire me for design, web or app projects.">
+  <meta name="theme-color" content="#f4f3ef">
+  <meta name="author" content="Rupam Debnath">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rupam Debnath — Graphic Designer & Web Developer">
+  <meta property="og:description" content="What I design, then what I build.">
+  <meta property="og:image" content="assets/images/hero/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/images/hero/rupam-hero.webp" type="image/webp" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="assets/images/hero/rupam-hero-mobile.webp" type="image/webp" media="(max-width: 767px)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <script>
+    (function (h) {
+      try { if (localStorage.getItem('rd-theme') === 'dark') h.classList.add('theme-dark'); } catch (e) {}
+      h.className = h.className.replace('no-js', 'js');
+      try { if (sessionStorage.getItem('rd-nav') === '1') { h.classList.add('is-entering'); sessionStorage.removeItem('rd-nav'); } } catch (e) {}
+      // Failsafe: never keep the page hidden if a script fails to load
+      setTimeout(function () { if (!h.classList.contains('is-loaded')) { h.classList.add('is-loaded'); h.classList.remove('is-locked'); } }, 8000);
+    })(document.documentElement);
+  </script>
+
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/smooth-scroll.js" defer></script>
+  <script src="assets/js/split-text.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script src="assets/js/scroll-effects.js" defer></script>
+  <script src="assets/js/design-intro.js" defer></script>
+  <script src="assets/js/hero-canvas.js" defer></script>
+  <script src="assets/js/cursor.js" defer></script>
+  <script src="assets/js/magnetic.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/dev-cards.js" defer></script>
+  <script src="assets/js/code-typer.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/clock.js" defer></script>
+  <script src="assets/js/page-transition.js" defer></script>
+  <script src="assets/js/preloader.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= PRELOADER + PAGE CURTAIN ================= -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <span class="preloader__word" data-preloader-word>নমস্কার</span>
+    <span class="preloader__count"><span data-preloader-count>0</span>%</span>
+    <span class="preloader__bar" data-preloader-bar></span>
+    <span class="preloader__curve"></span>
+  </div>
+  <div class="curtain" data-curtain aria-hidden="true"><span class="curtain__label" data-curtain-label>Rupam Debnath</span></div>
+
+  <!-- ================= CURSOR ================= -->
+  <div class="cursor" data-cursor-root aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label" data-cursor-label></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header header--on-photo">
+    <div class="header__inner container">
+      <a href="#top" class="logo" data-magnetic aria-label="Rupam Debnath, back to top">
+        <span class="logo__mark">RD</span>
+        <span class="logo__text">Rupam Debnath<small>Design × Code</small></span>
+      </a>
+      <div class="header__right">
+        <nav class="nav" aria-label="Primary">
+          <div class="nav__item nav__item--drop">
+            <a class="nav__link" href="works.html" aria-haspopup="true">All works<svg class="ico nav__chev" aria-hidden="true"><use href="assets/icons/sprite.svg#i-chevron"/></svg></a>
+            <div class="nav__drop">
+              <a href="works.html"><span>All works</span><small>Everything in one place</small></a>
+              <a href="works.html#design"><span>Graphic design</span><small>Social media · Branding · Logos</small></a>
+              <a href="works.html#code"><span>Coding</span><small>Web apps · APIs · Python</small></a>
+            </div>
+          </div>
+          <a class="nav__link" href="#about" data-magnetic>About</a>
+          <a class="nav__link" href="#cv" data-magnetic>CV</a>
+          <a class="nav__link" href="#services" data-magnetic>Services</a>
+          <a class="nav__link nav__link--cta" href="#contact" data-magnetic>Hire me</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+          <span class="theme-toggle__track" aria-hidden="true">
+            <span class="theme-toggle__thumb">
+              <svg class="ico theme-toggle__sun"><use href="assets/icons/sprite.svg#i-sun"/></svg>
+              <svg class="ico theme-toggle__moon"><use href="assets/icons/sprite.svg#i-moon"/></svg>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+    <span class="menu-btn__lines" aria-hidden="true"><span></span><span></span></span>
+  </button>
+
+  <div class="menu" id="site-menu" data-menu aria-hidden="true">
+    <div class="menu__overlay" data-menu-close></div>
+    <nav class="menu__panel" aria-label="Menu" data-scroll-prevent>
+      <p class="menu__label">Navigation</p>
+      <ul class="menu__list">
+        <li><a class="menu__link" style="--i:0" href="#top" data-menu-link>Home</a></li>
+        <li>
+          <a class="menu__link" style="--i:1" href="works.html" data-menu-link>All works</a>
+          <div class="menu__sub" style="--i:1">
+            <a href="works.html#design" data-menu-link>Design</a>
+            <a href="works.html#code" data-menu-link>Coding</a>
+          </div>
+        </li>
+        <li><a class="menu__link" style="--i:2" href="#about" data-menu-link>About</a></li>
+        <li><a class="menu__link" style="--i:3" href="#cv" data-menu-link>CV</a></li>
+        <li><a class="menu__link" style="--i:4" href="#services" data-menu-link>Services</a></li>
+        <li><a class="menu__link" style="--i:5" href="#contact" data-menu-link>Contact</a></li>
+      </ul>
+<p class="menu__label">Appearance</p>
+      <button class="theme-toggle theme-toggle--menu" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+        <span class="theme-toggle__track" aria-hidden="true">
+          <span class="theme-toggle__thumb">
+            <svg class="ico theme-toggle__sun"><use href="assets/icons/sprite.svg#i-sun"/></svg>
+            <svg class="ico theme-toggle__moon"><use href="assets/icons/sprite.svg#i-moon"/></svg>
+          </span>
+        </span>
+        <span class="theme-toggle__text" data-theme-label>Dark mode</span>
+      </button>
+      <p class="menu__label">Say hello</p>
+      <div class="menu__socials socials socials--icons">
+        <a class="social" data-social="whatsapp" href="https://wa.me/8801307521491" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg></a>
+        <a class="social" data-social="email" href="#contact" aria-label="Email"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-gmail"/></svg></a>
+        <a class="social" data-social="github" href="#contact" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg></a>
+        <a class="social" data-social="linkedin" href="#contact" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-linkedin"/></svg></a>
+        <a class="social" data-social="behance" href="#contact" target="_blank" rel="noopener" aria-label="Behance"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-behance"/></svg></a>
+        <a class="social" data-social="instagram" href="#contact" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram"/></svg></a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-float" data-wa-float data-social="whatsapp" href="https://wa.me/8801307521491" target="_blank" rel="noopener" aria-label="Chat with Rupam on WhatsApp" data-cursor="Chat">
+    <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>
+  </a>
+
+  <main id="main">
+
+    <!-- ================= HERO (full-screen portrait) ================= -->
+    <section class="hero" id="top" data-hero data-theme="light">
+      <div class="hero__media" data-hero-media>
+        <picture>
+          <!-- Phones: portrait poster · Tablets & desktops: wide banner -->
+          <source media="(max-width: 767px)" srcset="assets/images/hero/rupam-hero-mobile.webp" type="image/webp" width="941" height="1672">
+          <source media="(max-width: 767px)" srcset="assets/images/hero/rupam-hero-mobile.jpg" type="image/jpeg" width="941" height="1672">
+          <source srcset="assets/images/hero/rupam-hero.webp" type="image/webp">
+          <img class="hero__img" src="assets/images/hero/rupam-hero.jpg" width="1670" height="941" fetchpriority="high"
+               alt="Rupam Debnath in sunglasses — one side painted in colourful brush strokes as a designer, the other side clean as a coder.">
+        </picture>
+      </div>
+      <canvas class="hero__canvas" data-hero-canvas aria-hidden="true"></canvas>
+
+      <div class="hero__bottom">
+        <div class="hero__meta container" data-hero-content>
+          <p class="hero__chip hero-in" style="--d:.15s"><span class="hero__pulse"></span>Available for freelance work</p>
+          <p class="hero__chip hero__chip--role hero-in" style="--d:.25s">Graphic Designer &amp; Web Developer</p>
+        </div>
+        <div class="hero__name hero-in" style="--d:.35s" data-hero-content>
+          <h1 class="sr-only">Rupam Debnath — Graphic Designer and Web Developer</h1>
+          <div class="marquee" data-marquee data-speed="1.1" aria-hidden="true">
+            <div class="marquee__track" data-marquee-track>
+              <div class="marquee__group">
+                <span class="hero__name-item">Rupam Debnath<i>✦</i></span>
+                <span class="hero__name-item">Rupam Debnath<i>✦</i></span>
+              </div>
+              <div class="marquee__group">
+                <span class="hero__name-item">Rupam Debnath<i>✦</i></span>
+                <span class="hero__name-item">Rupam Debnath<i>✦</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTRO / ABOUT ================= -->
+    <section class="intro" id="about" data-theme="light">
+      <div class="intro__grid container">
+        <p class="intro__statement" data-split="scrub" data-scrub>
+          Two crafts, one mindset. I design visuals people remember and build websites and apps people enjoy using — from posters and brand identities to fast, accessible digital products.
+        </p>
+        <div class="intro__side">
+          <p class="intro__note" data-reveal>
+            I'm Rupam, a CSE student at AIUB in Bangladesh. I've been designing for about two years: social media, branding, logos and posters. I also build web apps and APIs, so ideas don't get lost between the mockup and the live product.
+          </p>
+          <div class="intro__actions" data-reveal style="--d:.15s">
+            <a href="#services" class="btn-round" data-magnetic>
+              <span class="btn-round__fill" aria-hidden="true"></span>
+              <span class="btn-round__label" data-magnetic-inner>Hire me</span>
+            </a>
+            <a href="works.html" class="link-arrow">See all works <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <ul class="intro__facts container" data-reveal>
+        <li><span>Design</span>Social media · Branding · Logos</li>
+        <li><span>Develop</span>Web apps · APIs · Python</li>
+        <li><span>Approach</span>Concept → Pixel → Code</li>
+      </ul>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="work" id="work">
+      <header class="work__head container" data-theme="light">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="work__title" data-split>What I design, <em>then what I build.</em></h2>
+      </header>
+
+      <!-- ---------- TRANSITION INTO DESIGN: paint burst + zoom into the design reel ---------- -->
+      <div class="dintro" data-dintro data-theme="light" aria-hidden="true">
+        <div class="dintro__stage">
+          <div class="dintro__strokes" data-dintro-strokes>
+            <span class="dintro__stroke" style="--c:var(--yellow);--x:-24;--y:-26;--r:-14;--w:34;--dx:-60;--dy:-40"><i></i></span>
+            <span class="dintro__stroke" style="--c:var(--red);--x:20;--y:-30;--r:10;--w:26;--dx:55;--dy:-45"><i></i></span>
+            <span class="dintro__stroke" style="--c:var(--teal);--x:26;--y:24;--r:-8;--w:32;--dx:60;--dy:45"><i></i></span>
+            <span class="dintro__stroke" style="--c:var(--navy);--x:-28;--y:22;--r:12;--w:24;--dx:-55;--dy:50"><i></i></span>
+            <span class="dintro__stroke" style="--c:var(--pink);--x:-2;--y:34;--r:-4;--w:20;--dx:0;--dy:60"><i></i></span>
+            <span class="dintro__stroke" style="--c:var(--yellow);--x:4;--y:-36;--r:6;--w:16;--dx:10;--dy:-60"><i></i></span>
+          </div>
+          <div class="dintro__frame" data-dintro-frame>
+            <img src="assets/images/work/00-design-reel.jpg" width="2400" height="1350" alt="" loading="lazy" data-dintro-img>
+            <div class="dintro__veil" data-dintro-veil></div>
+            <p class="dintro__caption" data-dintro-caption>
+              <span>01 — Visual design</span>
+              <strong>Social media · Branding · Logos</strong>
+            </p>
+          </div>
+          <p class="dintro__title"><span data-dintro-left>What&nbsp;I</span><span data-dintro-right>design</span></p>
+          <p class="dintro__hint" data-dintro-hint>Keep scrolling</p>
+        </div>
+      </div>
+
+      <!-- ---------- 1. GRAPHIC + UI DESIGN: images left / title right ---------- -->
+      <div class="design-show" id="design" data-theme="light" data-showcase>
+        <div class="design-show__grid container">
+
+          <div class="design-show__gallery">
+            <figure class="dproj dproj--wide" style="--ar:1600/983" data-showcase-item data-title="Uranus Gadgets" data-cat="Instagram feed · Social media">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/uranus-feed.jpg" data-lightbox-title="Uranus Gadgets — Instagram feed" data-cursor="View" aria-label="Open Uranus Gadgets Instagram feed">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/uranus-feed.jpg" width="1600" height="983" loading="lazy" alt="Uranus Gadgets Instagram feed: product posts for wireless speakers, headphones, smartphones and laptops." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>01</span><strong>Uranus Gadgets</strong><em>Instagram feed</em><time>2025</time></figcaption>
+            </figure>
+
+            <figure class="dproj" style="--ar:1600/2304" data-showcase-item data-title="Uranus Gadgets" data-cat="Feed mockup · Social media">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/uranus-mockup.jpg" data-lightbox-title="Uranus Gadgets — Feed mockup" data-cursor="View" aria-label="Open Uranus Gadgets Feed mockup">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/uranus-mockup.jpg" width="1600" height="2304" loading="lazy" alt="Two phones showing Uranus Gadgets Instagram posts for SoundCube and Wireless headphones." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>02</span><strong>Uranus Gadgets</strong><em>Feed mockup</em><time>2025</time></figcaption>
+            </figure>
+
+            <figure class="dproj dproj--offset" style="--ar:1600/2343" data-showcase-item data-title="Mono Skincare" data-cat="Story mockup · Social media">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/mono-mockup.jpg" data-lightbox-title="Mono Skincare — Story mockup" data-cursor="View" aria-label="Open Mono Skincare Story mockup">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/mono-mockup.jpg" width="1600" height="2343" loading="lazy" alt="Mono Skincare story designs for a facial serum and daily skincare essential shown on phones." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>03</span><strong>Mono Skincare</strong><em>Story mockup</em><time>2025</time></figcaption>
+            </figure>
+
+            <figure class="dproj dproj--wide" style="--ar:1600/991" data-showcase-item data-title="Mono Skincare" data-cat="Instagram feed · Social media">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/mono-feed.jpg" data-lightbox-title="Mono Skincare — Instagram feed" data-cursor="View" aria-label="Open Mono Skincare Instagram feed">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/mono-feed.jpg" width="1600" height="991" loading="lazy" alt="Mono Skincare Instagram feed with serum, face cream and organic product posts in soft greens and creams." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>04</span><strong>Mono Skincare</strong><em>Instagram feed</em><time>2025</time></figcaption>
+            </figure>
+
+            <figure class="dproj dproj--wide" style="--ar:1600/983" data-showcase-item data-title="bkry" data-cat="Brand identity · Branding">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/bkry-identity.jpg" data-lightbox-title="bkry — Brand identity" data-cursor="View" aria-label="Open bkry Brand identity">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/bkry-identity.jpg" width="1600" height="983" loading="lazy" alt="bkry bakery brand identity: logo, brown and cream colour palette and bakery promo designs." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>05</span><strong>bkry</strong><em>Brand identity</em><time>2024</time></figcaption>
+            </figure>
+
+            <figure class="dproj" style="--ar:1600/983" data-showcase-item data-title="bkry" data-cat="Brand applications · Branding">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/bkry-mockups.jpg" data-lightbox-title="bkry — Brand applications" data-cursor="View" aria-label="Open bkry Brand applications">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/bkry-mockups.jpg" width="1600" height="983" loading="lazy" alt="bkry branding applied to an apron, business card, signage board and paper bag." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>06</span><strong>bkry</strong><em>Brand applications</em><time>2024</time></figcaption>
+            </figure>
+
+            <figure class="dproj dproj--offset" style="--ar:1600/609" data-showcase-item data-title="Marken" data-cat="Signage · Branding">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/marken-signage.jpg" data-lightbox-title="Marken — Signage" data-cursor="View" aria-label="Open Marken Signage">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/marken-signage.jpg" width="1600" height="609" loading="lazy" alt="Marken hanging sign and opening-hours display in a mall." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>07</span><strong>Marken</strong><em>Signage</em><time>2024</time></figcaption>
+            </figure>
+
+            <figure class="dproj dproj--wide" style="--ar:1600/926" data-showcase-item data-title="Marken" data-cat="Logo &amp; pattern · Branding">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/marken-identity.jpg" data-lightbox-title="Marken — Logo &amp; pattern" data-cursor="View" aria-label="Open Marken Logo &amp; pattern">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/marken-identity.jpg" width="1600" height="926" loading="lazy" alt="Marken logo, colour palette and repeating monogram pattern." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>08</span><strong>Marken</strong><em>Logo &amp; pattern</em><time>2024</time></figcaption>
+            </figure>
+
+            <figure class="dproj dproj--wide" style="--ar:1600/1056" data-showcase-item data-title="Marken" data-cat="Apparel mockup · Branding">
+              <button class="dproj__media" type="button" data-lightbox="assets/images/work/marken-apparel.jpg" data-lightbox-title="Marken — Apparel mockup" data-cursor="View" aria-label="Open Marken Apparel mockup">
+                <span class="dproj__clip" data-clip-reveal><img src="assets/images/work/marken-apparel.jpg" width="1600" height="1056" loading="lazy" alt="Marken wordmark over a rack of jackets and a tote bag." data-parallax-img></span>
+              </button>
+              <figcaption class="dproj__cap"><span>09</span><strong>Marken</strong><em>Apparel mockup</em><time>2024</time></figcaption>
+            </figure>
+
+            <a class="more-card" href="works.html#design" data-cursor="Open" data-reveal>
+              <span class="more-card__eyebrow">Explore more work</span>
+              <span class="more-card__title">All design work</span>
+              <span class="more-card__meta">Social media · Branding · Stories · Mockups <span class="more-card__arrow"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></span></span>
+            </a>
+          </div>
+
+          <aside class="design-show__panel">
+            <div class="panel-sticky" data-reveal="right">
+              <p class="eyebrow eyebrow--warm">01 — Visual design</p>
+              <h3 class="display design-show__title">
+                <span class="line">Design</span>
+                <span class="line">is how</span>
+                <span class="line design-show__last">I think
+                  <svg class="brush" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 22 C 70 6, 150 4, 296 14" pathLength="1"/></svg>
+                </span>
+              </h3>
+              <p class="panel__text">Social media, branding and logo design for real brands — from tech shops to skincare and bakeries.</p>
+              <ul class="chips"><li>Social media</li><li>Branding</li><li>Logo design</li><li>Posters</li><li>Layout</li></ul>
+              <div class="panel__now" aria-live="polite">
+                <span class="panel__now-label">Now viewing</span>
+                <span class="panel__count"><span data-showcase-current>01</span><span> / 09</span></span>
+                <span class="panel__now-title"><span data-showcase-title>Uranus Gadgets</span><small data-showcase-cat>Instagram feed · Social media</small></span>
+              </div>
+              <a class="pill pill--light" href="works.html#design" data-magnetic>All design work <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+
+      <!-- ---------- SWITCH: the cinematic hand-off from design to code ---------- -->
+      <div class="switch" data-switch aria-hidden="true">
+        <div class="switch__sticky">
+          <div class="switch__layer switch__layer--light">
+            <span class="switch__word" data-switch-out>Design</span>
+            <span class="switch__hint">What I design →</span>
+          </div>
+          <div class="switch__layer switch__layer--dark" data-switch-clip>
+            <span class="switch__word switch__word--code" data-switch-in>&lt;Develop/&gt;</span>
+            <span class="switch__hint">→ what I build</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ---------- TRANSITION INTO CODE: code glyphs burst + zoom into the project reel ---------- -->
+      <div class="dintro dintro--code" data-dintro data-theme="dark" aria-hidden="true">
+        <div class="dintro__stage">
+          <div class="dintro__strokes">
+            <span class="dintro__stroke dintro__glyph" style="--c:var(--teal);--x:-26;--y:-24;--r:-10;--w:10;--dx:-60;--dy:-40"><i>&lt;/&gt;</i></span>
+            <span class="dintro__stroke dintro__glyph" style="--c:var(--yellow);--x:24;--y:-28;--r:8;--w:8;--dx:55;--dy:-45"><i>{ }</i></span>
+            <span class="dintro__stroke dintro__glyph" style="--c:var(--red);--x:28;--y:24;--r:-6;--w:9;--dx:60;--dy:45"><i>=&gt;</i></span>
+            <span class="dintro__stroke dintro__glyph" style="--c:#79a8ff;--x:-28;--y:24;--r:10;--w:8;--dx:-55;--dy:50"><i>( )</i></span>
+            <span class="dintro__stroke dintro__glyph" style="--c:var(--teal);--x:0;--y:36;--r:-4;--w:6;--dx:0;--dy:60"><i>;</i></span>
+            <span class="dintro__stroke dintro__glyph" style="--c:var(--pink);--x:2;--y:-38;--r:6;--w:7;--dx:10;--dy:-60"><i>[ ]</i></span>
+          </div>
+          <div class="dintro__frame" data-dintro-frame>
+            <img src="assets/images/code/00-code-reel.jpg" width="2400" height="1350" alt="" loading="lazy" data-dintro-img>
+            <div class="dintro__veil" data-dintro-veil></div>
+            <p class="dintro__caption" data-dintro-caption>
+              <span>02 — Development</span>
+              <strong>Web apps · APIs · Python</strong>
+            </p>
+          </div>
+          <p class="dintro__title"><span data-dintro-left>What&nbsp;I</span><span data-dintro-right>build</span></p>
+          <p class="dintro__hint" data-dintro-hint>Keep scrolling</p>
+        </div>
+      </div>
+
+      <!-- ---------- 2. DEVELOPMENT: title left / projects right ---------- -->
+      <div class="dev-show" id="development" data-theme="dark" data-showcase>
+        <div class="dev-show__grid container">
+
+          <aside class="dev-show__panel">
+            <div class="panel-sticky" data-reveal="left">
+              <p class="eyebrow eyebrow--cool">02 — Development</p>
+              <h3 class="display dev-show__title">
+                <span class="line"><b>&lt;</b>Built</span>
+                <span class="line">with</span>
+                <span class="line">logic<b>/&gt;</b></span>
+              </h3>
+              <p class="panel__text">Web apps, REST APIs and Python experiments: real-time maps, movie discovery, computer vision and more.</p>
+              <div class="code-window" data-code-typer>
+                <div class="code-window__bar"><i></i><i></i><i></i><span>rupam.config.ts</span></div>
+                <pre class="code-window__body"><code data-code-target></code><span class="code-window__caret"></span></pre>
+              </div>
+              <div class="panel__now" aria-live="polite">
+                <span class="panel__now-label">Now viewing</span>
+                <span class="panel__count"><span data-showcase-current>01</span><span> / 04</span></span>
+                <span class="panel__now-title"><span data-showcase-title>Rupam Earth Live</span><small data-showcase-cat>Web app</small></span>
+              </div>
+              <a class="pill" href="works.html#code" data-magnetic>All coding projects <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></a>
+            </div>
+          </aside>
+
+          <div class="dev-show__list">
+            <article class="dev-card" data-showcase-item data-title="Rupam Earth Live" data-cat="Web app" data-reveal="right">
+              <a class="dev-card__preview" href="https://github.com/Rup4m/Rupam-Earth-Live-Weather" target="_blank" rel="noopener" data-cursor="Open" data-tilt aria-label="Rupam Earth Live on GitHub (opens in a new tab)">
+                <span class="browser">
+                  <span class="browser__bar"><i></i><i></i><i></i><span class="browser__url">github.com/Rup4m/Rupam-Earth-Live-Weather</span></span>
+                  <span class="browser__screen"><img class="browser__shot" src="assets/images/code/earth-live.jpg" width="1440" height="900" loading="lazy" alt="Rupam Earth Live preview."></span>
+                </span>
+              </a>
+              <div class="dev-card__body">
+                <div class="dev-card__head"><span class="dev-card__num">01</span><h4 class="dev-card__title">Rupam Earth Live</h4><span class="dev-card__type">Web app · Weather radar</span></div>
+                <p class="dev-card__desc">A real-time planetary weather viewer inspired by Zoom Earth and Windy. It has live radar and satellite layers, a timeline player, wind-flow particles drawn on canvas, and a weather inspector for any point on the map.</p>
+                <ul class="chips"><li>JavaScript</li><li>Leaflet</li><li>Canvas</li><li>RainViewer</li><li>Open-Meteo</li></ul>
+                <div class="dev-card__links">
+                  <a class="link-arrow" href="https://github.com/Rup4m/Rupam-Earth-Live-Weather" target="_blank" rel="noopener"><svg class="ico ico--brand" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg>GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="dev-card" data-showcase-item data-title="MovieVault" data-cat="Web app" data-reveal="right">
+              <a class="dev-card__preview" href="https://github.com/Rup4m/MovieVault" target="_blank" rel="noopener" data-cursor="Open" data-tilt aria-label="MovieVault on GitHub (opens in a new tab)">
+                <span class="browser">
+                  <span class="browser__bar"><i></i><i></i><i></i><span class="browser__url">github.com/Rup4m/MovieVault</span></span>
+                  <span class="browser__screen"><img class="browser__shot" src="assets/images/code/movievault.jpg" width="1440" height="1661" loading="lazy" alt="MovieVault preview."></span>
+                </span>
+              </a>
+              <div class="dev-card__body">
+                <div class="dev-card__head"><span class="dev-card__num">02</span><h4 class="dev-card__title">MovieVault</h4><span class="dev-card__type">Web app · Movies</span></div>
+                <p class="dev-card__desc">Discover trending movies, watch trailers and check ratings, then save films to a personal watch-later list.</p>
+                <ul class="chips"><li>JavaScript</li><li>TMDB API</li><li>Supabase</li><li>YouTube</li></ul>
+                <div class="dev-card__links">
+                  <a class="link-arrow" href="https://github.com/Rup4m/MovieVault" target="_blank" rel="noopener"><svg class="ico ico--brand" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg>GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="dev-card" data-showcase-item data-title="EduNest API" data-cat="Backend" data-reveal="right">
+              <a class="dev-card__preview" href="https://github.com/kamrulhassan017/Edu-NEST-API/pull/1" target="_blank" rel="noopener" data-cursor="Open" data-tilt aria-label="EduNest API on GitHub (opens in a new tab)">
+                <span class="browser">
+                  <span class="browser__bar"><i></i><i></i><i></i><span class="browser__url">github.com/Edu-NEST-API</span></span>
+                  <span class="browser__screen"><img class="browser__shot" src="assets/images/code/edunest.jpg" width="1440" height="1266" loading="lazy" alt="EduNest API preview."></span>
+                </span>
+              </a>
+              <div class="dev-card__body">
+                <div class="dev-card__head"><span class="dev-card__num">03</span><h4 class="dev-card__title">EduNest API</h4><span class="dev-card__type">Backend · Team project</span></div>
+                <p class="dev-card__desc">A course management REST API built by a team of four. I built the Category and Course modules: CRUD with validation, search, category filters and shared pagination.</p>
+                <ul class="chips"><li>NestJS</li><li>TypeScript</li><li>PostgreSQL</li><li>TypeORM</li></ul>
+                <div class="dev-card__links">
+                  <a class="link-arrow" href="https://github.com/kamrulhassan017/Edu-NEST-API/pull/1" target="_blank" rel="noopener"><svg class="ico ico--brand" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg>My pull request</a>
+                  <a class="link-arrow" href="https://github.com/kamrulhassan017/Edu-NEST-API" target="_blank" rel="noopener"><svg class="ico ico--brand" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg>Team repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="dev-card" data-showcase-item data-title="Python Hand Tracker" data-cat="Computer vision" data-reveal="right">
+              <a class="dev-card__preview" href="https://github.com/Rup4m/Python-Hand-tracker" target="_blank" rel="noopener" data-cursor="Open" data-tilt aria-label="Python Hand Tracker on GitHub (opens in a new tab)">
+                <span class="browser">
+                  <span class="browser__bar"><i></i><i></i><i></i><span class="browser__url">github.com/Rup4m/Python-Hand-tracker</span></span>
+                  <span class="browser__screen"><img class="browser__shot" src="assets/images/code/hand.jpg" width="1440" height="1426" loading="lazy" alt="Python Hand Tracker preview."></span>
+                </span>
+              </a>
+              <div class="dev-card__body">
+                <div class="dev-card__head"><span class="dev-card__num">04</span><h4 class="dev-card__title">Python Hand Tracker</h4><span class="dev-card__type">Computer vision · Python</span></div>
+                <p class="dev-card__desc">Real-time hand tracking from the webcam using 21 landmarks. Show one particular gesture and it triggers a prank PC shutdown.</p>
+                <ul class="chips"><li>Python</li><li>OpenCV</li><li>MediaPipe</li></ul>
+                <div class="dev-card__links">
+                  <a class="link-arrow" href="https://github.com/Rup4m/Python-Hand-tracker" target="_blank" rel="noopener"><svg class="ico ico--brand" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg>GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <a class="more-card more-card--dark" href="works.html#code" data-cursor="Open" data-reveal>
+              <span class="more-card__eyebrow">Explore more work</span>
+              <span class="more-card__title">All coding projects</span>
+              <span class="more-card__meta">Web apps · APIs · Labs · Experiments <span class="more-card__arrow"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></span></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TOOLBOX ================= -->
+    <section class="toolbox" id="toolbox" data-theme="dark">
+      <div class="toolbox__head container">
+        <p class="eyebrow eyebrow--cool">Toolbox</p>
+        <h2 class="toolbox__title" data-split>Tools I think with.</h2>
+      </div>
+      <div class="toolbox__rows" aria-label="Skills and tools">
+        <div class="marquee toolbox__row" data-marquee data-speed="0.7">
+          <div class="marquee__track" data-marquee-track>
+            <ul class="marquee__group"><li>Photoshop</li><li>Canva</li><li>Figma</li><li>CapCut</li><li>Social media</li><li>Branding</li><li>Logo design</li><li>Posters</li><li>Layout</li></ul>
+            <ul class="marquee__group" aria-hidden="true"><li>Photoshop</li><li>Canva</li><li>Figma</li><li>CapCut</li><li>Social media</li><li>Branding</li><li>Logo design</li><li>Posters</li><li>Layout</li></ul>
+          </div>
+        </div>
+        <div class="marquee toolbox__row toolbox__row--code" data-marquee data-speed="-0.7">
+          <div class="marquee__track" data-marquee-track>
+            <ul class="marquee__group"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>NestJS</li><li>Python</li><li>Java</li><li>C</li><li>C++</li><li>C#</li><li>Kotlin</li><li>MySQL</li><li>Unity</li></ul>
+            <ul class="marquee__group" aria-hidden="true"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>NestJS</li><li>Python</li><li>Java</li><li>C</li><li>C++</li><li>C#</li><li>Kotlin</li><li>MySQL</li><li>Unity</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CV ================= -->
+    <section class="cv" id="cv" data-theme="light">
+      <div class="container">
+        <div class="cv__head">
+          <div>
+            <p class="eyebrow">Curriculum vitae</p>
+            <h2 class="cv__title" data-split>Experience &amp; education</h2>
+          </div>
+          <div class="cv__actions" data-reveal>
+            <a class="btn-pill btn-pill--ink" data-href="cv" href="assets/cv/Rupam-Debnath-CV.pdf" download data-magnetic>
+              <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-download"/></svg>Download CV
+            </a>
+            <a class="btn-pill" data-href="cv" href="assets/cv/Rupam-Debnath-CV.pdf" target="_blank" rel="noopener" data-magnetic>
+              <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-eye"/></svg>View CV
+            </a>
+            <a class="btn-pill" data-href="portfolio" href="assets/cv/Rupam-Debnath-Design-Portfolio.pdf" target="_blank" rel="noopener" data-magnetic>
+              <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-palette"/></svg>Design portfolio (PDF)
+            </a>
+          </div>
+        </div>
+
+        <div class="cv__grid">
+          <div class="cv__col" data-reveal>
+            <h3 class="cv__col-title"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-palette"/></svg>Experience</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__date">2023 — Present</span>
+                <h4>Freelance Graphic Designer</h4>
+                <p class="timeline__where">Rupam Digital · Remote</p>
+                <p>Social media, branding, logo, poster and layout design for brands such as Uranus Gadgets (tech shop, Dhaka) and Mono Skincare.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">2024 — Present</span>
+                <h4>Graphics Designer</h4>
+                <p class="timeline__where">AIUB Hindu Society</p>
+                <p>Event posters and social media graphics for the society's programmes.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">2024</span>
+                <h4>Graphics Contest — CS Fest</h4>
+                <p class="timeline__where">American International University-Bangladesh</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">2026</span>
+                <h4>Backend Developer — EduNest API</h4>
+                <p class="timeline__where">University team project · 4 members</p>
+                <p>Built the Category and Course modules of a NestJS + PostgreSQL course management API.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="cv__col" data-reveal style="--d:.1s">
+            <h3 class="cv__col-title"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-file"/></svg>Education</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__date">2023 — Present</span>
+                <h4>B.Sc. in Computer Science &amp; Engineering</h4>
+                <p class="timeline__where">American International University-Bangladesh (AIUB)</p>
+                <p>Web technologies, software engineering, databases and programming.</p>
+              </li>
+            </ol>
+
+            <h3 class="cv__col-title cv__col-title--spaced"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-ui"/></svg>Skills</h3>
+            <dl class="skills">
+              <div><dt>Design</dt><dd>Photoshop · Canva · Figma · AI image creation &amp; editing</dd></div>
+              <div><dt>Video</dt><dd>CapCut (pro video editing)</dd></div>
+              <div><dt>Web</dt><dd>HTML · CSS · JavaScript · TypeScript · NestJS</dd></div>
+              <div><dt>Programming</dt><dd>Python · Java · C · C++ · C# · Kotlin</dd></div>
+              <div><dt>Data &amp; tools</dt><dd>MySQL · Oracle · PostgreSQL · Unity · Blender</dd></div>
+              <div><dt>Strengths</dt><dd>Attention to detail · Creative · Time management · Love learning</dd></div>
+              <div><dt>Languages</dt><dd>Bangla (native) · English · Hindi</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES / HIRE ME ================= -->
+    <section class="hire" id="services" data-theme="light">
+      <div class="container">
+        <div class="hire__head">
+          <p class="eyebrow eyebrow--warm">Services</p>
+          <h2 class="hire__title" data-split>Need a design, a website or an app? <em>Let's make it.</em></h2>
+          <p class="hire__lead" data-reveal>Pick what you need, then message me on WhatsApp or email. Tell me about your idea and I'll come back with a plan, a timeline and a quote.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="svc" data-reveal>
+            <span class="svc__icon" style="--c:var(--red)"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-palette"/></svg></span>
+            <h3 class="svc__title">Graphic design</h3>
+            <p class="svc__desc">Visuals that make your brand impossible to ignore.</p>
+            <ul class="svc__list"><li>Logo &amp; brand identity</li><li>Posters, flyers &amp; banners</li><li>Social media designs</li><li>Packaging &amp; print</li></ul>
+            <div class="svc__actions">
+              <a class="btn-pill btn-pill--wa" data-href="whatsapp" data-wa-text="Hi Rupam! I'd like to order graphic design (logo / branding / posters)." href="https://wa.me/8801307521491" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>Order on WhatsApp</a>
+              <a class="link-arrow" href="#start" data-service="Graphic design">Get a quote <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="svc" data-reveal style="--d:.08s">
+            <span class="svc__icon" style="--c:var(--yellow)"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-ui"/></svg></span>
+            <h3 class="svc__title">UI / UX design</h3>
+            <p class="svc__desc">Interfaces that look sharp and feel effortless.</p>
+            <ul class="svc__list"><li>Website &amp; app UI in Figma</li><li>Wireframes &amp; prototypes</li><li>Dashboards &amp; landing pages</li><li>Design systems</li></ul>
+            <div class="svc__actions">
+              <a class="btn-pill btn-pill--wa" data-href="whatsapp" data-wa-text="Hi Rupam! I'd like a UI/UX design for my website or app." href="https://wa.me/8801307521491" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>Order on WhatsApp</a>
+              <a class="link-arrow" href="#start" data-service="UI / UX design">Get a quote <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="svc" data-reveal style="--d:.16s">
+            <span class="svc__icon" style="--c:var(--teal)"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-web"/></svg></span>
+            <h3 class="svc__title">Website development</h3>
+            <p class="svc__desc">Fast, responsive websites built from scratch.</p>
+            <ul class="svc__list"><li>Portfolio &amp; business websites</li><li>Landing pages that convert</li><li>E-commerce &amp; web apps</li><li>APIs &amp; back-end (NestJS)</li></ul>
+            <div class="svc__actions">
+              <a class="btn-pill btn-pill--wa" data-href="whatsapp" data-wa-text="Hi Rupam! I'd like to get a website built." href="https://wa.me/8801307521491" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>Order on WhatsApp</a>
+              <a class="link-arrow" href="#start" data-service="Website development">Get a quote <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="svc" data-reveal style="--d:.24s">
+            <span class="svc__icon" style="--c:var(--navy)"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mobile"/></svg></span>
+            <h3 class="svc__title">Mobile app development</h3>
+            <p class="svc__desc">Apps for Android and iOS from one codebase.</p>
+            <ul class="svc__list"><li>Flutter cross-platform apps</li><li>Native Android with Kotlin</li><li>API &amp; database integration</li><li>App UI design included</li></ul>
+            <div class="svc__actions">
+              <a class="btn-pill btn-pill--wa" data-href="whatsapp" data-wa-text="Hi Rupam! I'd like to build a mobile app." href="https://wa.me/8801307521491" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>Order on WhatsApp</a>
+              <a class="link-arrow" href="#start" data-service="Mobile app development">Get a quote <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="svc svc--wide" data-reveal>
+            <span class="svc__icon" style="--c:var(--pink)"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-chat"/></svg></span>
+            <div class="svc__body">
+              <h3 class="svc__title">Consultation</h3>
+              <p class="svc__desc">Not sure what you need yet? Let's talk it through — brand direction, a design review, or which tech stack fits your idea and budget.</p>
+            </div>
+            <div class="svc__actions">
+              <a class="btn-pill btn-pill--wa" data-href="whatsapp" data-wa-text="Hi Rupam! I'd like to book a consultation about my project." href="https://wa.me/8801307521491" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>Book on WhatsApp</a>
+              <a class="btn-pill" data-href="email" data-mail-subject="Consultation request" href="#start"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"/></svg>Email me</a>
+            </div>
+          </article>
+        </div>
+
+        <ol class="process" aria-label="How I work">
+          <li class="process__step" data-reveal><span>01</span><h4>Discuss</h4><p>We talk about your goals, audience, timeline and budget.</p></li>
+          <li class="process__step" data-reveal style="--d:.08s"><span>02</span><h4>Design</h4><p>Concepts and mockups, refined with your feedback.</p></li>
+          <li class="process__step" data-reveal style="--d:.16s"><span>03</span><h4>Develop</h4><p>Clean, responsive build — tested on every screen size.</p></li>
+          <li class="process__step" data-reveal style="--d:.24s"><span>04</span><h4>Deliver</h4><p>Launch, hand-over files and support after delivery.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact" data-theme="dark">
+      <div class="contact__inner container">
+        <h2 class="contact__title">
+          <span class="contact__line"><span class="contact__avatar"><img src="assets/images/hero/rupam-avatar.jpg" width="400" height="400" loading="lazy" alt=""></span><span data-split>Let's create</span></span>
+          <span class="contact__line" data-split style="--d:.1s">something bold.</span>
+        </h2>
+
+        <div class="contact__grid">
+          <!-- Start a project form: sends via WhatsApp or email (no server needed) -->
+          <form class="form" id="start" data-contact-form novalidate>
+            <p class="form__title">Start a project</p>
+            <div class="form__row">
+              <label class="field"><span>Your name</span><input name="name" type="text" autocomplete="name" required placeholder="Jane Doe"></label>
+              <label class="field"><span>Email or phone</span><input name="reply" type="text" autocomplete="email" required placeholder="you@example.com"></label>
+            </div>
+            <div class="form__row">
+              <label class="field"><span>Service</span>
+                <select name="service" required>
+                  <option value="">Choose a service</option>
+                  <option>Graphic design</option>
+                  <option>UI / UX design</option>
+                  <option>Website development</option>
+                  <option>Mobile app development</option>
+                  <option>Consultation</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+              <label class="field"><span>Budget <em>(optional)</em></span>
+                <select name="budget">
+                  <option value="">Not sure yet</option>
+                  <option>Under ৳10,000</option>
+                  <option>৳10,000 – ৳30,000</option>
+                  <option>৳30,000 – ৳80,000</option>
+                  <option>৳80,000+</option>
+                  <option>International (USD)</option>
+                </select>
+              </label>
+            </div>
+            <label class="field"><span>About your project</span><textarea name="message" rows="4" required placeholder="What would you like to make? Any deadline?"></textarea></label>
+            <div class="form__actions">
+              <button class="btn-pill btn-pill--wa" type="submit" value="whatsapp"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>Send on WhatsApp</button>
+              <button class="btn-pill btn-pill--light" type="submit" value="email"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-gmail"/></svg>Send by email</button>
+            </div>
+            <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact__side">
+            <a href="https://wa.me/8801307521491" data-href="whatsapp" target="_blank" rel="noopener" class="btn-round btn-round--accent btn-round--xl contact__round" data-magnetic>
+              <span class="btn-round__fill" aria-hidden="true"></span>
+              <span class="btn-round__label" data-magnetic-inner>Get in touch</span>
+            </a>
+            <div class="contact__channels">
+              <a class="channel" data-href="whatsapp" href="https://wa.me/8801307521491" target="_blank" rel="noopener">
+                <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>
+                <span><small>WhatsApp</small><strong data-text="whatsapp">+880 1307-521491</strong></span>
+              </a>
+              <a class="channel" data-href="email" href="#start">
+                <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-gmail"/></svg>
+                <span><small>Email</small><strong data-text="email">Gmail — coming soon</strong></span>
+              </a>
+            </div>
+            <ul class="socials socials--grid" aria-label="Social profiles">
+              <li><a class="social" data-social="github" href="#contact" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg><span>GitHub</span></a></li>
+              <li><a class="social" data-social="linkedin" href="#contact" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-linkedin"/></svg><span>LinkedIn</span></a></li>
+              <li><a class="social" data-social="behance" href="#contact" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-behance"/></svg><span>Behance</span></a></li>
+              <li><a class="social" data-social="dribbble" href="#contact" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-dribbble"/></svg><span>Dribbble</span></a></li>
+              <li><a class="social" data-social="instagram" href="#contact" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram"/></svg><span>Instagram</span></a></li>
+              <li><a class="social" data-social="facebook" href="#contact" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-facebook"/></svg><span>Facebook</span></a></li>
+              <li><a class="social" data-social="x" href="#contact" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-x"/></svg><span>X</span></a></li>
+              <li><a class="social" data-social="whatsapp" href="https://wa.me/8801307521491" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg><span>WhatsApp</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer container">
+        <div class="footer__meta">
+          <div><span class="footer__label">Version</span><span>2026 © Edition</span></div>
+          <div><span class="footer__label">Local time</span><span><span data-clock>--:--</span> GMT+6</span></div>
+        </div>
+        <div class="footer__links">
+          <a class="link-arrow" href="works.html">All works</a>
+          <a class="link-arrow" href="#cv">CV</a>
+          <a class="link-arrow" href="#services">Services</a>
+          <a class="link-arrow" href="#top">Back to top ↑</a>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" data-lightbox-root role="dialog" aria-modal="true" aria-label="Project preview" aria-hidden="true">
+    <button class="lightbox__btn lightbox__close" type="button" data-lightbox-close aria-label="Close preview"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-close"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lightbox-prev aria-label="Previous project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="lightbox__btn lightbox__next" type="button" data-lightbox-next aria-label="Next project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" data-lightbox-img src="data:," alt="">
+      <figcaption class="lightbox__caption" data-lightbox-caption></figcaption>
+    </figure>
+  </div>
+</body>
+</html>

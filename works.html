@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All works — Rupam Debnath</title>
+  <meta name="description" content="Every project by Rupam Debnath: graphic design, UI design and development — websites, APIs and mobile apps.">
+  <meta name="theme-color" content="#f4f3ef">
+  <meta property="og:title" content="All works — Rupam Debnath">
+  <meta property="og:image" content="assets/images/hero/og-image.jpg">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/works.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <script>
+    (function (h) {
+      try { if (localStorage.getItem('rd-theme') === 'dark') h.classList.add('theme-dark'); } catch (e) {}
+      h.className = h.className.replace('no-js', 'js') + ' is-loaded';
+      try { if (sessionStorage.getItem('rd-nav') === '1') { h.classList.add('is-entering'); sessionStorage.removeItem('rd-nav'); } } catch (e) {}
+    })(document.documentElement);
+  </script>
+
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/data/projects.js" defer></script>
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/works.js" defer></script>
+  <script src="assets/js/smooth-scroll.js" defer></script>
+  <script src="assets/js/split-text.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script src="assets/js/scroll-effects.js" defer></script>
+  <script src="assets/js/cursor.js" defer></script>
+  <script src="assets/js/magnetic.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/dev-cards.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/clock.js" defer></script>
+  <script src="assets/js/page-transition.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body class="page-works">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="curtain" data-curtain aria-hidden="true"><span class="curtain__label" data-curtain-label>All works</span></div>
+
+  <div class="cursor" data-cursor-root aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label" data-cursor-label></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- floating preview used by the list view -->
+  <div class="list-preview" data-list-preview aria-hidden="true"><img alt="" data-list-preview-img src="data:,"></div>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo" data-magnetic aria-label="Rupam Debnath, home">
+        <span class="logo__mark">RD</span>
+        <span class="logo__text">Rupam Debnath<small>Design × Code</small></span>
+      </a>
+      <div class="header__right">
+        <nav class="nav" aria-label="Primary">
+          <div class="nav__item nav__item--drop">
+            <a class="nav__link is-active" href="works.html" aria-haspopup="true">All works<svg class="ico nav__chev" aria-hidden="true"><use href="assets/icons/sprite.svg#i-chevron"/></svg></a>
+            <div class="nav__drop">
+              <a href="works.html"><span>All works</span><small>Everything in one place</small></a>
+              <a href="works.html#design"><span>Graphic design</span><small>Social media · Branding · Logos</small></a>
+              <a href="works.html#code"><span>Coding</span><small>Web apps · APIs · Python</small></a>
+            </div>
+          </div>
+          <a class="nav__link" href="index.html#about" data-magnetic>About</a>
+          <a class="nav__link" href="index.html#cv" data-magnetic>CV</a>
+          <a class="nav__link" href="index.html#services" data-magnetic>Services</a>
+          <a class="nav__link nav__link--cta" href="index.html#contact" data-magnetic>Hire me</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+          <span class="theme-toggle__track" aria-hidden="true">
+            <span class="theme-toggle__thumb">
+              <svg class="ico theme-toggle__sun"><use href="assets/icons/sprite.svg#i-sun"/></svg>
+              <svg class="ico theme-toggle__moon"><use href="assets/icons/sprite.svg#i-moon"/></svg>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+    <span class="menu-btn__lines" aria-hidden="true"><span></span><span></span></span>
+  </button>
+
+  <div class="menu" id="site-menu" data-menu aria-hidden="true">
+    <div class="menu__overlay" data-menu-close></div>
+    <nav class="menu__panel" aria-label="Menu" data-scroll-prevent>
+      <p class="menu__label">Navigation</p>
+      <ul class="menu__list">
+        <li><a class="menu__link" style="--i:0" href="index.html" data-menu-link>Home</a></li>
+        <li>
+          <a class="menu__link" style="--i:1" href="works.html" data-menu-link>All works</a>
+          <div class="menu__sub" style="--i:1">
+            <a href="works.html#design" data-menu-link>Design</a>
+            <a href="works.html#code" data-menu-link>Coding</a>
+          </div>
+        </li>
+        <li><a class="menu__link" style="--i:2" href="index.html#about" data-menu-link>About</a></li>
+        <li><a class="menu__link" style="--i:3" href="index.html#cv" data-menu-link>CV</a></li>
+        <li><a class="menu__link" style="--i:4" href="index.html#services" data-menu-link>Services</a></li>
+        <li><a class="menu__link" style="--i:5" href="index.html#contact" data-menu-link>Contact</a></li>
+      </ul>
+<p class="menu__label">Appearance</p>
+      <button class="theme-toggle theme-toggle--menu" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+        <span class="theme-toggle__track" aria-hidden="true">
+          <span class="theme-toggle__thumb">
+            <svg class="ico theme-toggle__sun"><use href="assets/icons/sprite.svg#i-sun"/></svg>
+            <svg class="ico theme-toggle__moon"><use href="assets/icons/sprite.svg#i-moon"/></svg>
+          </span>
+        </span>
+        <span class="theme-toggle__text" data-theme-label>Dark mode</span>
+      </button>
+      <p class="menu__label">Say hello</p>
+      <div class="menu__socials socials socials--icons">
+        <a class="social" data-social="whatsapp" href="https://wa.me/8801307521491" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg></a>
+        <a class="social" data-social="email" href="index.html#contact" aria-label="Email"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-gmail"/></svg></a>
+        <a class="social" data-social="github" href="#" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg></a>
+        <a class="social" data-social="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-linkedin"/></svg></a>
+        <a class="social" data-social="behance" href="#" target="_blank" rel="noopener" aria-label="Behance"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-behance"/></svg></a>
+        <a class="social" data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram"/></svg></a>
+      </div>
+    </nav>
+  </div>
+
+  <a class="wa-float is-visible" data-social="whatsapp" href="https://wa.me/8801307521491" target="_blank" rel="noopener" aria-label="Chat with Rupam on WhatsApp" data-cursor="Chat">
+    <svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>
+  </a>
+
+  <main id="main">
+    <section class="works-hero container" data-theme="light">
+      <p class="eyebrow" data-reveal>Portfolio · <span data-works-total>18</span> projects</p>
+      <h1 class="works-hero__title" data-split>All works</h1>
+      <p class="works-hero__lead" data-reveal style="--d:.15s">Graphic design, UI design and code — everything I've made, in one place. Filter by what you're looking for.</p>
+
+    </section>
+
+    <section class="works container" id="projects" data-theme="light" aria-live="polite">
+      <div class="works-bar" data-reveal style="--d:.25s">
+        <div class="filters" role="group" aria-label="Filter projects" data-filters>
+          <span class="filters__pill" data-filter-pill aria-hidden="true"></span>
+          <button class="filters__btn" type="button" data-filter="all" aria-pressed="true">All <sup data-count="all"></sup></button>
+          <button class="filters__btn" type="button" data-filter="design" aria-pressed="false">Graphic design <sup data-count="design"></sup></button>
+          <button class="filters__btn" type="button" data-filter="ui" aria-pressed="false">UI design <sup data-count="ui"></sup></button>
+          <button class="filters__btn" type="button" data-filter="code" aria-pressed="false">Coding <sup data-count="code"></sup></button>
+        </div>
+        <div class="view-toggle" role="group" aria-label="Layout">
+          <button type="button" data-view="grid" aria-pressed="true" aria-label="Grid view"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-grid"/></svg></button>
+          <button type="button" data-view="list" aria-pressed="false" aria-label="List view"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-list"/></svg></button>
+        </div>
+      </div>
+      <div class="works__grid" data-works-grid>
+        <noscript><p>Please enable JavaScript to browse all projects, or visit the <a href="index.html#work">home page</a>.</p></noscript>
+      </div>
+    </section>
+
+    <section class="works-cta" data-theme="dark">
+      <div class="container works-cta__inner">
+        <p class="eyebrow eyebrow--cool">Like what you see?</p>
+        <h2 class="works-cta__title" data-split>Let's build yours next.</h2>
+        <div class="works-cta__actions" data-reveal>
+          <a class="btn-pill btn-pill--wa" data-href="whatsapp" href="https://wa.me/8801307521491" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"/></svg>Message on WhatsApp</a>
+          <a class="btn-pill btn-pill--light" href="index.html#services"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-send"/></svg>See services</a>
+        </div>
+      </div>
+      <footer class="footer container">
+        <div class="footer__meta">
+          <div><span class="footer__label">Version</span><span>2026 © Edition</span></div>
+          <div><span class="footer__label">Local time</span><span><span data-clock>--:--</span> GMT+6</span></div>
+        </div>
+        <ul class="socials socials--row" aria-label="Social profiles">
+          <li><a class="social" data-social="github" href="#" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-github"/></svg></a></li>
+          <li><a class="social" data-social="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-linkedin"/></svg></a></li>
+          <li><a class="social" data-social="behance" href="#" target="_blank" rel="noopener" aria-label="Behance"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-behance"/></svg></a></li>
+          <li><a class="social" data-social="dribbble" href="#" target="_blank" rel="noopener" aria-label="Dribbble"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-dribbble"/></svg></a></li>
+          <li><a class="social" data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram"/></svg></a></li>
+          <li><a class="social" data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-facebook"/></svg></a></li>
+        </ul>
+      </footer>
+    </section>
+  </main>
+
+  <div class="lightbox" data-lightbox-root role="dialog" aria-modal="true" aria-label="Project preview" aria-hidden="true">
+    <button class="lightbox__btn lightbox__close" type="button" data-lightbox-close aria-label="Close preview"><svg class="ico" aria-hidden="true"><use href="assets/icons/sprite.svg#i-close"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lightbox-prev aria-label="Previous project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="lightbox__btn lightbox__next" type="button" data-lightbox-next aria-label="Next project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" data-lightbox-img src="data:," alt="">
+      <figcaption class="lightbox__caption" data-lightbox-caption></figcaption>
+    </figure>
+  </div>
+</body>
+</html>
